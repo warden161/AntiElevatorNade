@@ -1,6 +1,9 @@
 # AntiElevatorNade
 ![img](https://img.shields.io/github/downloads/TemmieGamerGuy/AntiElevatorNade/total.svg)
 
+![img](https://img.shields.io/github/downloads/warden161/AntiElevatorNade/total.svg)
+
+# Description
  An SCP:SL EXILED plugin to disable friendly fire elevator grenades
  
  Stops players from mass TKing by throwing grenades into elevators to wipe out the whole team without requiring friendly fire to be disabled.
