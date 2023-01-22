@@ -6,12 +6,11 @@ namespace AntiElevatorNade
 {
     public class AntiElevatorNade : Plugin<Config>
     {
-        private static AntiElevatorNade Singleton;
-        public static AntiElevatorNade Instance => Singleton;
+        public static AntiElevatorNade Instance { get; private set; }
         public override string Author => "TemmieGamerGuy";
         public override string Name => "AntiElevatorNade";
-        public override Version Version => new Version(1, 0, 5);
-        public override Version RequiredExiledVersion => new Version(3, 0, 0);
+        public override Version Version => new Version(1, 1, 0);
+        public override Version RequiredExiledVersion => new Version(6, 0, 0);
 
         private Handlers.Map map;
 
@@ -29,7 +28,7 @@ namespace AntiElevatorNade
 
         public override void OnEnabled()
         {
-            Singleton = this;
+            Instance = this;
             RegisterEvents();
             base.OnEnabled();
         }
@@ -37,7 +36,7 @@ namespace AntiElevatorNade
         public override void OnDisabled()
         {
             UnregisterEvents();
-            Singleton = null;
+            Instance = null;
             base.OnDisabled();
         }
     }
