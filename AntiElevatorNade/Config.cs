@@ -7,6 +7,8 @@ namespace AntiElevatorNade
     {
         public bool IsEnabled { get; set; } = true;
 
+        public bool Debug { get; set; }
+
         [Description("The minimum players to trigger the anti elevator grenade")]
         public int MinimumPlayersGrenade { get; set; } = 2;
 
